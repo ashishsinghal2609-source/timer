@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import clsx from 'clsx';
+
 
 export function Button({ children, variant = 'primary', className = '', ...props }) {
   const base =
@@ -16,7 +16,6 @@ export function Button({ children, variant = 'primary', className = '', ...props
   return (
     <button
       {...props}
-      className={clsx(base, variants[variant], 'px-6 py-3 text-lg', className)}
       type={props.type || 'button'}
     >
       {children}
